@@ -1,5 +1,5 @@
 const weather = document.querySelector(".weather");
-const content = document.createElement("span");
+const content = weather.querySelector("span");
 const API_KEY = "f417f1ae4cf331bb82e2ff33082fc3c3";
 
 function onGeoOk(position) {
@@ -17,14 +17,12 @@ function onGeoOk(position) {
             content.innerText = `${Math.floor(data.main.temp)}ºC\n${
                 data.weather[0].main
             }`;
-            weather.appendChild(img);
-            weather.appendChild(content);
+            weather.prepend(img);
         });
 }
 
 function onGeoError() {
     content.innerText = "위젯";
-    weather.appendChild(content);
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
