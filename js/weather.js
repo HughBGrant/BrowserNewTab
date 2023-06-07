@@ -1,5 +1,5 @@
-const weather = document.querySelector("#weather span:first-child");
-const city = document.querySelector("#weather span:last-child");
+const weather = document.querySelector(".weather");
+const weatherInfo = weather.querySelector("span");
 const API_KEY = "f417f1ae4cf331bb82e2ff33082fc3c3";
 
 function onGeoOk(position) {
@@ -9,12 +9,20 @@ function onGeoOk(position) {
     fetch(url)
         .then((response) => response.json())
         .then((data) => {
-            city.innerText = data.name;
-            weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+            const icon = document.createElement("img");
+            icon.setAttribute(
+                "src",
+                `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+            );
+            weatherInfo.innerText = `${Math.floor(data.main.temp)}ºC\n${
+                data.weather[0].main
+            }`;
+            weather.prepend(icon);
         });
 }
+
 function onGeoError() {
-    alert("Can't find you. No weather for you.");
+    weatherInfo.innerText = "위젯";
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);

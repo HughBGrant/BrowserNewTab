@@ -1,0 +1,49 @@
+.desktop {
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: start;
+}
+
+.icon {
+    width: 100px;
+    height: 120px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: transparent;
+}
+
+.icon:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px dashed white;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.icon span {
+    height: 20px;
+    width: 100px;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.icon:active span,
+.icon:focus span {
+    overflow: visible;
+    white-space: normal;
+}

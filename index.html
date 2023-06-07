@@ -1,43 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
-        <title>Momentum App</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.4.0/css/all.min.css"
+        />
+        <title>Windows 11</title>
     </head>
+
     <body>
-        <h2 id="clock">00:00:00</h2>
-        <form class="hidden" id="login-form">
-            <input
-                required
-                maxlength="15"
-                type="text"
-                placeholder="What is your name?"
-            />
-            <input type="submit" value="Log In" />
-        </form>
-        <h1 class="hidden" id="greeting"></h1>
-        <form id="todo-form">
-            <input
-                type="text"
-                placeholder="Write a To Do and Press Enter"
-                required
-            />
-        </form>
-        <ul id="todo-list"></ul>
-        <div id="quote">
-            <span></span>
-            <span></span>
+        <div class="wrap">
+            <div class="desktop">
+                <div class="icon" tabindex="0">
+                    <img src="img/icons/administrator.png" />
+                    <span>Administrator</span>
+                </div>
+                <div class="icon" tabindex="0">
+                    <img src="img/icons/my-pc.png" />
+                    <span>내 PC</span>
+                </div>
+                <div class="icon" tabindex="0">
+                    <img src="img/icons/recycle-bin.png" />
+                    <span>휴지통</span>
+                </div>
+                <div
+                    class="icon"
+                    tabindex="0"
+                    id="naver-whale"
+                    ondblclick="openBrowser()"
+                >
+                    <img src="img/icons/naver-whale.png" />
+                    <span>네이버 웨일</span>
+                </div>
+                <div
+                    class="icon"
+                    tabindex="0"
+                    id="ms-to-do"
+                    ondblclick="executeApp(event)"
+                >
+                    <img src="img/icons/ms-to-do.png" />
+                    <span>Microsoft To Do</span>
+                </div>
+                <div class="app ms-to-do">
+                    <div class="title-bar">
+                        <div class="title-bar__column">
+                            <img src="img/icons/ms-to-do.png" />
+                            <span>Microsoft To Do</span>
+                        </div>
+                        <div class="title-bar__column">
+                            <div class="ms-to-do" onclick="exitApp(event)">
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <div class="ms-to-do" onclick="exitApp(event)">
+                                <i class="fa-regular fa-square"></i>
+                            </div>
+                            <div class="ms-to-do" onclick="exitApp(event)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="todo-form">
+                        <input type="text" placeholder="작업 추가" required />
+                    </form>
+                    <ul class="todo-list"></ul>
+                    <div class="quote">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-bar">
+                <div class="task-bar-column">
+                    <span><img src="img/icons/window.png" /></span>
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="검색" />
+                    </div>
+                    <span id="ms-to-do" onclick="executeApp(event)">
+                        <img src="img/icons/ms-to-do.png" />
+                    </span>
+                </div>
+                <div class="task-bar-column">
+                    <div class="weather">
+                        <span class="weather-component"></span>
+                    </div>
+                    <span><i class="fa-solid fa-chevron-up"></i></span>
+                    <span><i class="fa-solid fa-a"></i></span>
+                    <span><i class="fa-solid fa-tv"></i></span>
+                    <span><i class="fa-solid fa-volume-high"></i></span>
+                    <div class="clock">
+                        <span class="clock-component"></span>
+                        <span class="clock-component"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="login">
+                <img src="img/ive.png" />
+                <form class="login-form hidden">
+                    <input
+                        required
+                        maxlength="16"
+                        type="text"
+                        placeholder="당신의 이름은?"
+                    />
+                    <button>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                </form>
+                <h1 class="greeting hidden">Dive into IVE!</h1>
+            </div>
         </div>
-        <div id="weather">
-            <span></span>
-            <span></span>
-        </div>
-        <script src="js/greetings.js"></script>
-        <script src="js/clock.js"></script>
-        <script src="js/quotes.js"></script>
+
         <script src="js/background.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/operations.js"></script>
         <script src="js/todo.js"></script>
         <script src="js/weather.js"></script>
     </body>
