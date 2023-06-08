@@ -1,5 +1,5 @@
-const time = document.querySelector("div.clock span:first-child");
-const date = document.querySelector("div.clock span:last-child");
+const time = document.querySelector(".clock div:first-child");
+const date = document.querySelector(".clock div:last-child");
 
 function getClock() {
     const today = new Date();

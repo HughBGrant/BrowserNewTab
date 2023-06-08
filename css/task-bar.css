@@ -43,31 +43,30 @@
     justify-content: end;
 }
 
-.task-bar__column span:not(.clock-component) {
+.task-bar__column div:not(.clock-component) {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.task-bar__column div:not(.search-bar):hover,
-.task-bar__column span:not(.clock-component, .weather-component):hover {
-    background-color: red;
+.task-bar__column div:hover {
+    background-color: #ffffffe0;
 }
 
-.task-bar__column span img {
+.task-bar__column div img {
     width: 20px;
     height: 20px;
     margin: 0px 15px;
 }
 
-.task-bar__column span:not(:first-child) img {
+.task-bar__column div:not(:first-child) img {
     width: 25px;
     height: 25px;
 }
 
-.task-bar__column span i {
+.task-bar__column div i {
     margin: 0px 5px;
 }
-.task-bar__column span i.more-margin {
+.task-bar__column div i.more-margin {
     margin: 0px 15px;
 }
 
@@ -94,7 +93,7 @@
     padding: 0px 5px;
 }
 
-.task-bar__column .clock span {
+.task-bar__column .clock div {
     height: 50%;
 }
 
