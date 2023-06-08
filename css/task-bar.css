@@ -3,8 +3,9 @@
     width: 100vw;
     height: 50px;
     bottom: 0px;
-    background-color: #fffffff0;
+    background-color: #ffffffe0;
     color: black;
+    padding: 3px 13px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,25 +13,26 @@
 
 .task-bar__column {
     width: 33%;
+    height: 100%;
     display: flex;
     align-items: center;
 }
 
-.task-bar__column:first-child {
-    justify-content: start;
+.task-bar__column > * {
+    height: 100%;
 }
 
 .weather {
+    width: 140px;
     background-color: dodgerblue;
-    padding: 0px 10px;
     font-size: 12px;
     display: flex;
     align-items: center;
 }
 
 .weather img {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
 }
 
 .task-bar__column:nth-child(2) {
@@ -48,7 +50,7 @@
 }
 .task-bar__column div:not(.search-bar):hover,
 .task-bar__column span:not(.clock-component, .weather-component):hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: red;
 }
 
 .task-bar__column span img {
@@ -71,7 +73,6 @@
 
 .task-bar__column .search-bar {
     width: 350px;
-    height: 5vh;
     background-color: white;
     display: flex;
     justify-content: space-evenly;
@@ -84,10 +85,6 @@
     outline: none;
     border: none;
     font-size: 20px;
-}
-
-.task-bar__column div {
-    height: 5vh;
 }
 
 .task-bar__column .clock {
