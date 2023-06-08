@@ -52,7 +52,7 @@ const quotes = [
 function executeApp(event) {
     const quote = document.querySelector(".quote span:first-child");
     const author = document.querySelector(".quote span:last-child");
-    const target = event.currentTarget.id;
+    const target = event.currentTarget.getAttribute("name");
     const app = document.querySelector(`.app.${target}`);
 
     const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -61,8 +61,19 @@ function executeApp(event) {
     app.style.visibility = "visible";
 }
 
+function adjustAppSize(event) {
+    const target = event.currentTarget.getAttribute("name");
+    app = document.querySelector(`.app.${target}`);
+    console.log(app);
+    if (app.classList.contains("max")) {
+        app.classList.remove("max");
+    } else {
+        app.classList.add("max");
+    }
+}
+
 function exitApp(event) {
-    const target = event.currentTarget.className;
+    const target = event.currentTarget.getAttribute("name");
     const app = document.querySelector(`.app.${target}`);
     app.style.visibility = "hidden";
 }

@@ -26,19 +26,14 @@
                     <img src="img/icons/recycle-bin.png" />
                     <span>휴지통</span>
                 </div>
-                <div
-                    class="icon"
-                    tabindex="0"
-                    id="naver-whale"
-                    ondblclick="openBrowser()"
-                >
+                <div class="icon" tabindex="0" ondblclick="openBrowser()">
                     <img src="img/icons/naver-whale.png" />
                     <span>네이버 웨일</span>
                 </div>
                 <div
                     class="icon"
                     tabindex="0"
-                    id="ms-to-do"
+                    name="ms-to-do"
                     ondblclick="executeApp(event)"
                 >
                     <img src="img/icons/ms-to-do.png" />
@@ -51,13 +46,13 @@
                             <span>Microsoft To Do</span>
                         </div>
                         <div class="title-bar__column">
-                            <div class="ms-to-do" onclick="exitApp(event)">
+                            <div name="ms-to-do" onclick="exitApp(event)">
                                 <i class="fa-solid fa-minus"></i>
                             </div>
-                            <div class="ms-to-do" onclick="exitApp(event)">
+                            <div name="ms-to-do" onclick="adjustAppSize(event)">
                                 <i class="fa-regular fa-square"></i>
                             </div>
-                            <div class="ms-to-do" onclick="exitApp(event)">
+                            <div name="ms-to-do" onclick="exitApp(event)">
                                 <i class="fa-solid fa-xmark"></i>
                             </div>
                         </div>
@@ -80,7 +75,7 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="text" placeholder="검색" />
                     </div>
-                    <span id="ms-to-do" onclick="executeApp(event)">
+                    <span name="ms-to-do" onclick="executeApp(event)">
                         <img src="img/icons/ms-to-do.png" />
                     </span>
                 </div>
