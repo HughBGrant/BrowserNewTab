@@ -1,15 +1,15 @@
 .desktop {
     height: 100vh;
-    padding: 10px;
+    padding: 5px 0px;
     display: flex;
     flex-flow: column wrap;
     align-content: start;
 }
 
 .icon {
-    width: 100px;
-    height: 120px;
-    margin-bottom: 20px;
+    width: 75px;
+    height: 70px;
+    margin-bottom: 30px;
     border: 1px solid transparent;
     display: flex;
     flex-direction: column;
@@ -27,15 +27,16 @@
 }
 
 .icon img {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 50px;
     object-fit: contain;
 }
 
 .icon span {
+    width: 75px;
     height: 20px;
-    width: 100px;
-    text-shadow: 3px 3px 3px black;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px black;
     text-align: center;
     overflow: hidden;
     white-space: nowrap;

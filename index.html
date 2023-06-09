@@ -70,26 +70,47 @@
 
             <div class="task-bar">
                 <div class="task-bar__column">
-                    <div class="weather">
+                    <div class="task-bar__button weather">
                         <span class="weather-component"></span>
                     </div>
                 </div>
                 <div class="task-bar__column">
-                    <div><img src="img/icons/window.png" /></div>
-                    <div class="search-bar">
+                    <div class="task-bar__button">
+                        <img src="img/icons/window.png" />
+                    </div>
+                    <div class="task-bar__button search-bar">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="text" placeholder="검색" />
                     </div>
-                    <div name="ms-to-do" onclick="executeApp(event)">
+                    <div
+                        class="task-bar__button"
+                        name="ms-to-do"
+                        onclick="executeApp(event)"
+                    >
+                        <img src="img/icons/ms-to-do.png" />
+                    </div>
+                    <div
+                        class="task-bar__button"
+                        name="ms-to-do"
+                        onclick="executeApp(event)"
+                    >
                         <img src="img/icons/ms-to-do.png" />
                     </div>
                 </div>
                 <div class="task-bar__column">
-                    <div><i class="fa-solid fa-chevron-up"></i></div>
-                    <div><i class="fa-solid fa-a"></i></div>
-                    <div><i class="fa-solid fa-tv"></i></div>
-                    <div><i class="fa-solid fa-volume-high"></i></div>
-                    <div class="clock">
+                    <div class="task-bar__button">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="task-bar__button">
+                        <i class="fa-solid fa-a"></i>
+                    </div>
+                    <div class="task-bar__button">
+                        <i class="fa-solid fa-tv"></i>
+                    </div>
+                    <div class="task-bar__button">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="task-bar__button clock">
                         <div class="clock-component"></div>
                         <div class="clock-component"></div>
                     </div>
