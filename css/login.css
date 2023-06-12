@@ -21,12 +21,16 @@
     align-items: center;
 }
 
+.hidden {
+    display: none;
+}
+
 .login-form input {
     font-size: 30px;
     border: none;
+    color: white;
     border-bottom: 3px solid white;
     background-color: transparent;
-    color: white;
     margin-bottom: 50px;
 }
 
@@ -40,4 +44,5 @@
 
 .greeting {
     font-size: 50px;
+    color: white;
 }

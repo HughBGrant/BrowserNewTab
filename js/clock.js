@@ -1,7 +1,7 @@
-const time = document.querySelector(".clock div:first-child");
-const date = document.querySelector(".clock div:last-child");
+const time = document.querySelector(".clock span:first-child");
+const date = document.querySelector(".clock span:last-child");
 
-function getClock() {
+const getClock = () => {
     const today = new Date();
 
     const hour = String(today.getHours());
@@ -18,7 +18,7 @@ function getClock() {
     }
 
     date.innerText = `${year}-${month}-${day}`;
-}
+};
 
 getClock();
 setInterval(getClock, 1000);

@@ -39,6 +39,11 @@
                     <img src="img/icons/ms-to-do.png" />
                     <span>Microsoft To Do</span>
                 </div>
+                <div class="quote">
+                    <span>오늘의 명언</span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="app ms-to-do">
                     <div class="title-bar">
                         <div class="title-bar__column">
@@ -57,13 +62,15 @@
                             </div>
                         </div>
                     </div>
-                    <form class="todo-form">
-                        <input type="text" placeholder="작업 추가" required />
-                    </form>
-                    <ul class="todo-list"></ul>
-                    <div class="quote">
-                        <span></span>
-                        <span></span>
+                    <div class="to-do">
+                        <ul class="to-do-list"></ul>
+                        <form class="to-do-form">
+                            <input
+                                type="text"
+                                placeholder="작업 추가"
+                                required
+                            />
+                        </form>
                     </div>
                 </div>
             </div>
@@ -71,7 +78,7 @@
             <div class="task-bar">
                 <div class="task-bar__column">
                     <div class="task-bar__button weather">
-                        <span class="weather-component"></span>
+                        <span></span>
                     </div>
                 </div>
                 <div class="task-bar__column">
@@ -104,8 +111,8 @@
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
                     <div class="task-bar__button clock">
-                        <div class="clock-component"></div>
-                        <div class="clock-component"></div>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
             </div>
@@ -123,7 +130,7 @@
                         <i class="fa-solid fa-arrow-down"></i>
                     </button>
                 </form>
-                <h1 class="greeting hidden">Dive into IVE!</h1>
+                <span class="greeting hidden">Dive into IVE!</span>
             </div>
         </div>
 
@@ -131,7 +138,8 @@
         <script src="js/clock.js"></script>
         <script src="js/login.js"></script>
         <script src="js/operations.js"></script>
-        <script src="js/todo.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/to-do.js"></script>
         <script src="js/weather.js"></script>
     </body>
 </html>

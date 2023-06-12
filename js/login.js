@@ -6,7 +6,7 @@ const greeting = document.querySelector(".greeting");
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
-function paintGreetings() {
+const paintGreetings = () => {
     greeting.classList.remove(HIDDEN_CLASSNAME);
 
     setTimeout(() => {
@@ -15,14 +15,14 @@ function paintGreetings() {
             { duration: 500, fill: "forwards" }
         );
     }, 1500);
-}
+};
 
-function onLoginSubmit(event) {
+const onLoginSubmit = (event) => {
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);
     localStorage.setItem(USERNAME_KEY, loginInput.value);
     paintGreetings();
-}
+};
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 

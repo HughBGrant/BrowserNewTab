@@ -36,6 +36,7 @@
     width: 75px;
     height: 20px;
     font-size: 12px;
+    color: white;
     text-shadow: 1px 1px 1px black;
     text-align: center;
     overflow: hidden;
@@ -47,4 +48,24 @@
 .icon:focus span {
     overflow: visible;
     white-space: normal;
+}
+
+.quote {
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    color: dodgerblue;
+}
+
+.quote span:first-child {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.quote span:last-child {
+    text-align: end;
 }

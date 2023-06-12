@@ -16,9 +16,9 @@ const images = [
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 const src = `img/wallpaper/${chosenImage}`;
+wrap = document.querySelector(".wrap");
 
 if (chosenImage.split(".").at(-1) === "mp4") {
-    wrap = document.querySelector(".wrap");
     const video = `<video muted autoplay loop><source src=${src} type="video/mp4" /></video>`;
     wrap.insertAdjacentHTML("afterbegin", video);
 } else {
