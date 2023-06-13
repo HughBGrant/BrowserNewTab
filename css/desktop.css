@@ -1,5 +1,5 @@
 .desktop {
-    height: 100vh;
+    height: calc(100% - var(--task-bar-height));
     padding: 5px 0px;
     display: flex;
     flex-flow: column wrap;
@@ -55,9 +55,9 @@
     bottom: 60px;
     right: 20px;
     width: 300px;
+    color: dodgerblue;
     display: flex;
     flex-direction: column;
-    color: dodgerblue;
 }
 
 .quote span:first-child {

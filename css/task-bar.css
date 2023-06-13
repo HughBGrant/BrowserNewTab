@@ -1,7 +1,7 @@
 .task-bar {
     position: absolute;
     width: 100vw;
-    height: 47px;
+    height: var(--task-bar-height);
     bottom: 0px;
     background-color: #ffffffe0;
     color: black;
@@ -87,6 +87,4 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: end;
-
-
 }
