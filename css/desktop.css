@@ -1,6 +1,6 @@
 .desktop {
     height: calc(100% - var(--task-bar-height));
-    padding: 5px 0px;
+    padding: 5px 0;
     display: flex;
     flex-flow: column wrap;
     align-content: start;
@@ -58,6 +58,10 @@
     color: dodgerblue;
     display: flex;
     flex-direction: column;
+}
+
+.quote * {
+    text-shadow: 1px 1px 1px black;
 }
 
 .quote span:first-child {

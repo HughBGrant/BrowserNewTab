@@ -19,7 +19,12 @@ body {
     user-select: none;
 }
 
-.wrap > video {
+#wrap {
+    width: 100vw;
+    height: 100vh;
+}
+
+#wrap > video {
     position: absolute;
     object-fit: cover;
     width: 100%;

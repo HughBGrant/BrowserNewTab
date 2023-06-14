@@ -1,24 +1,28 @@
 .ms-to-do {
     background-color: #f0f0f0;
-    width: 300px;
+    width: 600px;
     height: 400px;
 }
 
 .to-do {
     height: calc(100% - var(--title-bar-height));
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .to-do-list {
+    position: absolute;
+    top: 5%;
     overflow: auto;
-    height: 85%;
-    padding: 5%;
+    height: 75%;
+    width: 90%;
 }
 
 .to-do-list li {
     background-color: white;
-    padding: 1% 3%;
-    margin-bottom: 0.5%;
+    padding: 10px 2%;
+    margin-bottom: 3px;
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
@@ -27,11 +31,9 @@
 
 .to-do-list li span {
     word-break: break-all;
-    display: flex;
-    align-items: center;
 }
 
-.cpl {
+.to-do-list li span.cpl {
     text-decoration: line-through;
     color: gray;
 }
@@ -39,27 +41,19 @@
 .to-do-list li button {
     background-color: transparent;
     border: none;
-    border-radius: 5px;
-}
-.to-do-list li button:hover {
-    background-color: transparent;
-}
-.to-do-list li button:active {
-    background-color: #000;
 }
 
 .to-do-form {
-    height: 15%;
-    width: 100%;
-    padding: 5%;
-    bottom: 0px;
+    background-color: white;
+    padding: 10px 2%;
+    border-radius: 3px;
     position: absolute;
-    display: flex;
-    justify-content: center;
+    bottom: 5%;
+    height: 10%;
+    width: 90%;
 }
 
 .to-do-form input {
     border: none;
-    width: 90%;
-    font-size: 20px;
+    width: 100%;
 }
