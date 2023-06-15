@@ -13,7 +13,7 @@
 
 .to-do-list {
     position: absolute;
-    top: 5%;
+    top: 20px;
     overflow: auto;
     height: 75%;
     width: 90%;
@@ -48,8 +48,8 @@
     padding: 10px 2%;
     border-radius: 3px;
     position: absolute;
-    bottom: 5%;
-    height: 10%;
+    bottom: 20px;
+    height: 40px;
     width: 90%;
 }
 

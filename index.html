@@ -26,15 +26,14 @@
                     <img src="img/icons/recycle-bin.png" />
                     <span>휴지통</span>
                 </div>
-                <div class="icon" tabindex="0" ondblclick="openBrowser()">
+                <div class="icon browser" tabindex="0">
                     <img src="img/icons/naver-whale.png" />
                     <span>네이버 웨일</span>
                 </div>
                 <div
-                    class="icon"
+                    class="icon execute-app__dblclick"
                     tabindex="0"
                     name="ms-to-do"
-                    ondblclick="executeApp(event)"
                 >
                     <img src="img/icons/ms-to-do.png" />
                     <span>Microsoft To Do</span>
@@ -51,13 +50,13 @@
                             <span>Microsoft To Do</span>
                         </div>
                         <div class="title-bar__column">
-                            <div name="ms-to-do" onclick="exitApp(event)">
+                            <div class="execute-app__click" name="ms-to-do">
                                 <i class="fa-solid fa-minus"></i>
                             </div>
-                            <div name="ms-to-do" onclick="adjustAppSize(event)">
+                            <div class="adjust-app-size" name="ms-to-do">
                                 <i class="fa-regular fa-square"></i>
                             </div>
-                            <div name="ms-to-do" onclick="exitApp(event)">
+                            <div class="execute-app__click" name="ms-to-do">
                                 <i class="fa-solid fa-xmark"></i>
                             </div>
                         </div>
@@ -73,44 +72,44 @@
                         </form>
                     </div>
                 </div>
+                <div class="start-menu"></div>
             </div>
 
             <div class="task-bar">
                 <div class="task-bar__column">
-                    <div class="task-bar__button weather">
+                    <div class="task-bar__icon weather">
                         <span></span>
                     </div>
                 </div>
                 <div class="task-bar__column">
-                    <div class="task-bar__button">
-                        <img src="img/icons/window.png" />
+                    <div class="task-bar__icon windows-icon">
+                        <img src="img/icons/windows.png" />
                     </div>
-                    <div class="task-bar__button search-bar">
+                    <form class="task-bar__icon search-form">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="text" placeholder="검색" />
-                    </div>
+                    </form>
                     <div
-                        class="task-bar__button"
+                        class="task-bar__icon execute-app__click"
                         name="ms-to-do"
-                        onclick="executeApp(event)"
                     >
                         <img src="img/icons/ms-to-do.png" />
                     </div>
                 </div>
                 <div class="task-bar__column">
-                    <div class="task-bar__button">
+                    <div class="task-bar__icon">
                         <i class="fa-solid fa-chevron-up"></i>
                     </div>
-                    <div class="task-bar__button">
+                    <div class="task-bar__icon">
                         <i class="fa-solid fa-a"></i>
                     </div>
-                    <div class="task-bar__button">
+                    <div class="task-bar__icon">
                         <i class="fa-solid fa-tv"></i>
                     </div>
-                    <div class="task-bar__button">
+                    <div class="task-bar__icon">
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
-                    <div class="task-bar__button clock">
+                    <div class="task-bar__icon clock">
                         <span></span>
                         <span></span>
                     </div>

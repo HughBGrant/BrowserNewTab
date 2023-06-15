@@ -8,6 +8,7 @@
     padding: 4px 13px;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid lightgray;
 }
 
 .task-bar__column {
@@ -29,7 +30,7 @@
     justify-content: end;
 }
 
-.task-bar__button {
+.task-bar__icon {
     border-radius: 5px;
     height: 100%;
     display: flex;
@@ -37,30 +38,30 @@
     align-items: center;
 }
 
-.task-bar__button:hover {
+.task-bar__icon:hover {
     background-color: #ffffffe0;
 }
 
-.task-bar__button img {
+.task-bar__icon img {
     height: 23px;
 }
 
-.task-bar__button.weather {
+.task-bar__icon.weather {
     width: 140px;
     font-size: 12px;
     justify-content: start;
 }
 
-.task-bar__button.weather img {
+.task-bar__icon.weather img {
     height: 40px;
 }
 
-.task-bar__column:nth-child(2) .task-bar__button {
+.task-bar__column:nth-child(2) .task-bar__icon {
     margin: 0 2px;
     width: 40px;
 }
 
-.task-bar__column:nth-child(2) .task-bar__button.search-bar {
+.task-bar__column:nth-child(2) .task-bar__icon.search-form {
     width: 220px;
     height: 75%;
     background-color: white;
@@ -71,17 +72,21 @@
     align-items: center;
 }
 
-.task-bar__button.search-bar input {
+.task-bar__column:nth-child(2) .task-bar__icon.search-form input {
     width: 80%;
     border: none;
     font-size: 14px;
 }
 
-.task-bar__column:last-child .task-bar__button {
+.task-bar__column:nth-child(2) .task-bar__icon.open {
+    background-color: #ffffffe0;
+}
+
+.task-bar__column:last-child .task-bar__icon {
     width: 30px;
 }
 
-.task-bar__column:last-child .task-bar__button.clock {
+.task-bar__column:last-child .task-bar__icon.clock {
     width: 75px;
     font-size: 12px;
     flex-direction: column;

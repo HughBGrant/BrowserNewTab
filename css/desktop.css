@@ -1,6 +1,6 @@
 .desktop {
     height: calc(100% - var(--task-bar-height));
-    padding: 5px 0;
+    position: relative;
     display: flex;
     flex-flow: column wrap;
     align-content: start;
@@ -9,7 +9,7 @@
 .icon {
     width: 75px;
     height: 70px;
-    margin-bottom: 30px;
+    margin: 10px 0 20px 0;
     border: 1px solid transparent;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@
 
 .quote {
     position: absolute;
-    bottom: 60px;
+    bottom: 20px;
     right: 20px;
     width: 300px;
     color: dodgerblue;
