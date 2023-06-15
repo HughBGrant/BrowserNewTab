@@ -1,11 +1,12 @@
-const browser = document.querySelector(".browser");
+const browserDblclick = document.querySelector(".browser-dblclick");
+const browserClick = document.querySelector(".browser-click");
 const executeAppClick = document.querySelectorAll(".execute-app__click");
 const executeAppDblclick = document.querySelector(".execute-app__dblclick");
 const adjustApp = document.querySelector(".adjust-app-size");
 const startMenu = document.querySelector(".start-menu");
 const windowsIcon = document.querySelector(".windows-icon");
-const searchForm = document.querySelector(".search-form");
-const searchInput = searchForm.querySelector("input");
+// const searchForm = document.querySelector(".search-form");
+// const searchInput = searchForm.querySelector("input");
 const OPEN_CLASSNAME = "open";
 const MAX_CLASSNAME = "max";
 
@@ -50,9 +51,10 @@ const webSearch = (event) => {
     searchInput.value = "";
 };
 
-browser.addEventListener("dblclick", openBrowser);
+browserDblclick.addEventListener("dblclick", openBrowser);
+browserClick.addEventListener("click", openBrowser);
 executeAppClick.forEach((app) => app.addEventListener("click", executeApp));
 executeAppDblclick.addEventListener("dblclick", executeApp);
 adjustApp.addEventListener("click", adjustAppSize);
 windowsIcon.addEventListener("click", executeStartMenu);
-searchForm.addEventListener("submit", webSearch);
+// searchForm.addEventListener("submit", webSearch);

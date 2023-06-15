@@ -3,12 +3,12 @@
     width: 100%;
     height: var(--task-bar-height);
     bottom: 0;
-    background-color: #ffffffe0;
+    background-color: #fffffff0;
     color: black;
     padding: 4px 13px;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid #b0b0b0;
 }
 
 .task-bar__column {
@@ -61,7 +61,7 @@
     width: 40px;
 }
 
-.task-bar__column:nth-child(2) .task-bar__icon.search-form {
+/* .task-bar__column:nth-child(2) .task-bar__icon.search-form {
     width: 220px;
     height: 75%;
     background-color: white;
@@ -76,7 +76,7 @@
     width: 80%;
     border: none;
     font-size: 14px;
-}
+} */
 
 .task-bar__column:nth-child(2) .task-bar__icon.open {
     background-color: #ffffffe0;

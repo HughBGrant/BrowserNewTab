@@ -4,7 +4,7 @@
     right: 10%;
     visibility: hidden;
     border-radius: 5px;
-    box-shadow: 0 0 50px gray;
+    box-shadow: 0 10px 30px -10px black;
 }
 
 .app.open {
@@ -33,7 +33,7 @@
 
 .title-bar__column img {
     width: 15px;
-    margin: 15px;
+    margin: 0 15px;
 }
 
 .title-bar__column:last-child div {

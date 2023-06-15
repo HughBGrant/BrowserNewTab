@@ -26,7 +26,7 @@
                     <img src="img/icons/recycle-bin.png" />
                     <span>휴지통</span>
                 </div>
-                <div class="icon browser" tabindex="0">
+                <div class="icon browser-dblclick" tabindex="0">
                     <img src="img/icons/naver-whale.png" />
                     <span>네이버 웨일</span>
                 </div>
@@ -72,7 +72,10 @@
                         </form>
                     </div>
                 </div>
-                <div class="start-menu"></div>
+                <div class="start-menu">
+                    <div class="start-menu__main"></div>
+                    <div class="start-menu__bar"></div>
+                </div>
             </div>
 
             <div class="task-bar">
@@ -85,10 +88,14 @@
                     <div class="task-bar__icon windows-icon">
                         <img src="img/icons/windows.png" />
                     </div>
-                    <form class="task-bar__icon search-form">
+                    <!-- <form class="task-bar__icon search-form">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="text" placeholder="검색" />
-                    </form>
+                    </form> -->
+                    <div class="task-bar__icon browser-click">
+                        <img src="img/icons/naver-whale.png" />
+                    </div>
+
                     <div
                         class="task-bar__icon execute-app__click"
                         name="ms-to-do"
