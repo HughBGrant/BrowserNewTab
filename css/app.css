@@ -4,6 +4,7 @@
     right: 10%;
     visibility: hidden;
     border-radius: 5px;
+    border: 1px solid #b0b0b0;
     box-shadow: 0 10px 30px -10px black;
 }
 

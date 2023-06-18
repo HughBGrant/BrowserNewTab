@@ -3,7 +3,7 @@
     width: 100%;
     height: var(--task-bar-height);
     bottom: 0;
-    background-color: #fffffff0;
+    background-color: #fffffff8;
     color: black;
     padding: 4px 13px;
     display: flex;
@@ -39,7 +39,8 @@
 }
 
 .task-bar__icon:hover {
-    background-color: #ffffffe0;
+    background-color: #ffffffff;
+    border: 1px solid #f0f0f0;
 }
 
 .task-bar__icon img {
@@ -60,23 +61,6 @@
     margin: 0 2px;
     width: 40px;
 }
-
-/* .task-bar__column:nth-child(2) .task-bar__icon.search-form {
-    width: 220px;
-    height: 75%;
-    background-color: white;
-    box-shadow: 0 0 1px black;
-    border-radius: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.task-bar__column:nth-child(2) .task-bar__icon.search-form input {
-    width: 80%;
-    border: none;
-    font-size: 14px;
-} */
 
 .task-bar__column:nth-child(2) .task-bar__icon.open {
     background-color: #ffffffe0;

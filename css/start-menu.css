@@ -5,12 +5,11 @@
     left: 50%;
     transition: 0.2s;
     width: 640px;
-    height: 0;
     max-height: 90%;
     position: absolute;
     background-color: #f0f0f0;
     border: 1px solid #b0b0b0;
-    opacity: 0.875;
+    opacity: 0.97;
     box-shadow: 0 10px 30px -10px black;
     border-radius: 10px;
 }
@@ -18,17 +17,99 @@
 .start-menu.open {
     visibility: visible;
     transform: translate(-50%, 0);
-    transition: 0.2s;
-    height: 725px;
+    height: 72.5%;
 }
 
-.start-menu__main {
+.start-menu__top {
+    position: relative;
     width: 100%;
     height: 91%;
-    opacity: 0.9375;
+    border-bottom: 1px solid #d0d0d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.start-menu__bar {
+.start-menu__top > * {
+    position: absolute;
+    width: 90%;
+    display: flex;
+}
+
+.search-form {
+    top: 4.5%;
+    height: 4.5%;
+    background-color: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 99px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search-form input {
+    width: 90%;
+    height: 65%;
+    border: none;
+    font-size: 14px;
+}
+
+.start-menu__fix {
+    top: 15%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.start-menu__title {
+    width: 89%;
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.start-menu__fix .start-menu__title span:first-child {
+    font-weight: 900;
+}
+
+.start-menu__fix .start-menu__title span:last-child {
+    background-color: #f8f8f8;
+    height: 100%;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-size: 12px;
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.start-menu__app {
+    position: absolute;
+    top: 11%;
+    width: 100%;
+    height: 89%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.start-menu__icon {
+    width: 16.5%;
+    height: 29%;
+}
+
+.start-menu__icon img {
+    width: 75px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.start-menu__bottom {
     width: 100%;
     height: 9%;
 }
