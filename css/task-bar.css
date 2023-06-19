@@ -63,6 +63,7 @@
 }
 
 .task-bar__column:nth-child(2) .task-bar__icon.open {
+    border: 1px solid #f0f0f0;
     background-color: #ffffffe0;
 }
 
