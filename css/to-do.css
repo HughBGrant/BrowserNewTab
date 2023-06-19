@@ -23,7 +23,7 @@
     background-color: white;
     padding: 10px 2%;
     margin-bottom: 3px;
-    border-radius: 3px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +46,7 @@
 .to-do-form {
     background-color: white;
     padding: 10px 2%;
-    border-radius: 3px;
+    border-radius: 5px;
     position: absolute;
     bottom: 20px;
     height: 40px;

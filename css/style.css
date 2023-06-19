@@ -11,16 +11,13 @@
     box-sizing: border-box;
 }
 
-body {
+#wrap {
     background-position: center;
     background-size: contain;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-#wrap {
     width: 100vw;
     height: 100vh;
 }
